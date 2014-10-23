@@ -157,8 +157,14 @@ $(document).ready(function ($) {
             var jssor_slider3 = new $JssorSlider$("slider3_container", options);
         });
 
-// Letters animarion
+// Letters animation by textillate.js
 
 $(function () {
-    $('.tlt').textillate({ in: { effect: 'rollIn' } });
-})
+    $('.title').textillate({ in: { effect: 'flip' } });
+    $('.description').textillate({ 
+        initialDelay:1800,
+        in: { effect: 'fadeInUpBig' } 
+    });
+});
+
+

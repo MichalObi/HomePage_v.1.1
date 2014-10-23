@@ -217,10 +217,18 @@ section.success {
     margin-right:-4px;
 }
 
+#about_me_text {
+    text-align: left;
+}
+
+#about_title {
+    font-family: 'Share', cursive;
+}
 
 #img_container {
     width: 204px;
     height: 284px;
+    padding-top: 3em;
 }
 
 #img_desc {
@@ -250,17 +258,17 @@ section.portfolio_colors {
             #FA3A3A, #292222
         );
 }
-#portfolio .portfolio-item {
-    right: 0;
-    margin: 0 0 15px;
+#portfolio img {
+   position: absolute;
+   right:12px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;
+@media(max-width:800px) {
+    #grid {
+        margin-left: 80px;
+    }
 }
+
 
 #img_container .caption {
     position: absolute;
@@ -346,8 +354,8 @@ section.contact_color {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
-    background: #fff;
+    color: #000;
+    background: rgba(255,255,255,0.7);
 }
 
 .floating-label-form-group {
@@ -580,3 +588,32 @@ footer .footer-below {
     .jssora03r:hover { background-position: -183px -33px; }
     .jssora03ldn { background-position: -243px -33px; }
     .jssora03rdn { background-position: -303px -33px; }
+
+/*CSS animation Send Mail button*/
+
+#button-aws {
+  border: 0;
+  background: #F65A5A;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+
+#button-aws:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+.mail-margin {
+padding-top: 100px;
+}
+
+.cbalink {
+display:none;
+}

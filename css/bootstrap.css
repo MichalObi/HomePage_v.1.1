@@ -35,7 +35,7 @@ video {
   display: inline-block;
   vertical-align: baseline;
 }
-audio:not([controls_1]) {
+audio:not([controls]) {
   display: none;
   height: 0;
 }
